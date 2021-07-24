@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dark.Views.welcome.RegisterPage2">
+
+    <StackLayout BackgroundColor="Snow"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+
+
+
+        <Label Text="Registre"
+                       FontSize="50"
+                  FontAttributes="Bold"
+                   TextColor="#1dabf0"
+                   HorizontalOptions="Center"
+                     Margin="50"/>
+                       
+        
+          <Entry Placeholder="Adress Mail" Margin="10"/>
+         <Entry Placeholder= "Confirm" Margin="10"/>
+        <Entry Placeholder="Password" IsPassword="True" Margin="10"/>
+          <Entry Placeholder="Confirm" IsPassword="True" Margin="10"/>
+      
+         <Button BackgroundColor= "#1dabf0 "Text="Get Started"
+                     TextColor="White" VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Fill"/>
+        
+   </ StackLayout>
+
+</ContentPage>

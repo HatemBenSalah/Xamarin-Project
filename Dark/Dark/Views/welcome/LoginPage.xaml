@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="False"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dark.Views.welcome.LoginPage">
+    <StackLayout BackgroundColor="Snow" Padding="0,20,0,0">
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Image x:Name="LogoSignIn"/>
+            <Label Text="Sign In" 
+                    FontSize="20"
+                  FontAttributes="Bold"
+                   TextColor="Gray"
+                    Margin="10"
+                    HorizontalOptions="Center"/>
+
+            <StackLayout VerticalOptions="CenterAndExpand" >
+
+                <Entry Placeholder="Adress mail" 
+                       PlaceholderColor="LightSlateGray" 
+                       Margin="15,0,15,10" 
+                      x:Name="Mail" Keyboard="Email" />
+                <Entry Placeholder="Password" 
+                       PlaceholderColor="LightSlateGray" Margin="15,0,15,10"
+                       IsPassword="True" x:Name="Password"/>
+
+
+                <Button BackgroundColor="#127ac7" Text="Sign In"
+                      TextColor="White" Margin="10"  VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Fill" Clicked="Btn_SignIN"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

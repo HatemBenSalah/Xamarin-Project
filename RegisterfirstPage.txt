@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UdemyApp"
+             x:Class="UdemyApp.MainPage"
+             Padding="0,20,0,0">
+
+    <StackLayout BackgroundColor="Snow"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+        
+
+
+        <Label Text="Registre"
+                       FontSize="50"
+                  FontAttributes="Bold"
+                   TextColor="#1dabf0"
+                   HorizontalOptions="Center"
+                     Margin="50"
+                       />
+        
+        <Entry Placeholder="First Name"/>
+        <Entry Placeholder="Last Name"/>
+        <Entry Placeholder="CIN" Keyboard="Numeric"/>
+        <Entry Placeholder="Phone" Keyboard="Numeric"/>
+        <Entry Placeholder="Home Adress" Margin="10"/>
+    
+         <Button BackgroundColor="#1dabf0"
+                 Text="Next step"
+                 TextColor="White"
+                 VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="Fill"/>
+        
+    </StackLayout>
+</ContentPage>

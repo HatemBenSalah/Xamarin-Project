@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+            NavigationPage.HasNavigationBar="False"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dark.Views.welcome.RegisterPage"
+    Padding="0,20,0,0"
+             BackgroundColor="White">
+
+
+        <StackLayout  VerticalOptions="Center" Margin="20,20,20,50">
+            
+        <Label Text="Registre"
+                       FontSize="50"
+                  FontAttributes="Bold"
+                   TextColor="#127ac7"
+                   HorizontalOptions="Center"
+               Margin="15,-18,15,30"
+             
+                     />
+
+        <Entry Placeholder="First Name" x:Name="FirstName" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+        <Entry Placeholder="Last Name" x:Name="LastName" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+        <Entry Placeholder="CIN" Keyboard="Numeric" x:Name="CIN" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+        <Entry Placeholder="Phone" Keyboard="Numeric" x:Name="Phone" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+        <Entry Placeholder="Home Adress"  x:Name="Adress" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+        <Entry Placeholder="Adress Mail"  x:Name="Mail" Keyboard="Email" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+        <Entry Placeholder="Password" IsPassword="True"  x:Name="Password" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+        <Entry Placeholder="Confirm" IsPassword="True"  x:Name="ConfirmPassword" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+        <Entry Placeholder="Do youhave a coupon code ?"  x:Name="Coupon" PlaceholderColor="LightSlateGray" Margin="15,-10,15,-10"/>
+
+        <Button BackgroundColor="#127ac7"
+                 Text="Get Started"
+                 TextColor="White"         
+                  Clicked="btn_Register"
+                   Margin="15,20,15,0"/>
+        </StackLayout>
+    
+</ContentPage>

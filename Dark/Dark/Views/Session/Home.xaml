@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dark.Views.Session.Home" BackgroundColor="White">
+ 
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton Source="" x:Name="Maison"/>
+            <ImageButton Source="" x:Name="Securite"/>
+         
+            <ImageButton Source="" x:Name="Jardin"/>
+            <ImageButton Source="" x:Name="Piscine"/>
+            <ImageButton Source="" x:Name="Tobogan"/>
+
+        </StackLayout>
+
+</ContentPage>

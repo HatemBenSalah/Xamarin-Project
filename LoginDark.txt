@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UdemyApp"
+             x:Class="UdemyApp.MainPage">
+
+    <StackLayout  BackgroundColor=" #127ac7" >
+       
+        <StackLayout VerticalOptions="CenterAndExpand" >
+            <Label Text=" DARK مرحبا بيك في " 
+                  FontSize="30"
+                  FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   Margin="15"/>
+            <Label Text="راحتك واجبنا"
+                     TextColor="White" 
+                   HorizontalOptions="Center" 
+                   Margin="10"
+                   FontSize="18"/>
+            <Button BackgroundColor=" #1dabf0" Text="Login    "
+                      TextColor="White" Margin="10"  VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Fill"/>
+
+            <Button BackgroundColor=" #1dabf0" Text="Register"
+                      TextColor="White" VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Fill"/>
+        </StackLayout>
+
+
+
+    </StackLayout>
+</ContentPage>

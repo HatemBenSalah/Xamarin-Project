@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Dark"
+             x:Class="Dark.MainPage"
+             Padding="0,20,0,0" BackgroundColor="White">
+
+    <StackLayout  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+
+
+
+        <Entry Placeholder="CIN"  Margin="1"   x:Name="CIN"/>
+        <Entry Placeholder="Name"  Margin="1"   x:Name="Name"/>
+        <Entry Placeholder="LastName"  Margin="1"   x:Name="LastName"/>
+        <Entry Placeholder="Phone"  Margin="1"   x:Name="Phone"/>
+        <Entry Placeholder="Adress"  Margin="1"   x:Name="Adress"/>
+        <Entry Placeholder="Coupon Code"  Margin="1"   x:Name="Coupon"/>
+
+        <Entry Placeholder="Mail"  Margin="1"   x:Name="Mail"/>
+       
+
+        <Entry Placeholder="password"  Margin="1"   x:Name="Password"/>
+
+
+
+
+        <Button BackgroundColor="#1dabf0" Text="Add Coupon"
+                     TextColor="White" VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Fill" Clicked="BtnAdd_Clicked"
+               />
+        <Button BackgroundColor="Red" Text="Skip this Step"
+                     TextColor="White" VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Fill"
+                Clicked="Button_Clicked_getMail"/>
+
+    </StackLayout>
+</ContentPage>

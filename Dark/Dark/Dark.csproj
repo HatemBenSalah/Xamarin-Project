@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Image\CouponCodoLogo.jpg" />
+    <None Remove="Image\Jardin.jpg" />
+    <None Remove="Image\Maison.png" />
+    <None Remove="Image\Piscine.png" />
+    <None Remove="Image\ProfilePicture.png" />
+    <None Remove="Image\ProfilePictureOriginalVersion.png" />
+    <None Remove="Image\Securite.jpg" />
+    <None Remove="Image\Tobogan.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Image\CouponCodoLogo.jpg" />
+    <EmbeddedResource Include="Image\Jardin.jpg" />
+    <EmbeddedResource Include="Image\Maison.png" />
+    <EmbeddedResource Include="Image\Piscine.png" />
+    <EmbeddedResource Include="Image\ProfilePicture.png" />
+    <EmbeddedResource Include="Image\Securite.jpg" />
+    <EmbeddedResource Include="Image\Tobogan.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.4" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />  
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Firebase\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Session\Etudiant.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Session\Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Session\Prof.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\welcome\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\welcome\RegisterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\welcome\Welcome.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
